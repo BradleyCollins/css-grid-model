@@ -1,0 +1,29 @@
+.box-1 {
+  @include boxDisplay;
+  grid-area: a;
+}
+
+.box-2 {
+  @include boxDisplay;
+  grid-area: b;
+}
+
+.box-3 {
+  @include boxDisplay;
+  grid-area: c;
+}
+
+.box-4 {
+  @include boxDisplay;
+  grid-area: d;
+}
+
+.box-5 {
+  @include boxDisplay;
+  grid-area: e;
+}
+
+.box-6 {
+  @include boxDisplay;
+  grid-area: f;
+}

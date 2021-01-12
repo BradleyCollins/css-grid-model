@@ -1,0 +1,31 @@
+.container {
+  @include gridContainer;
+  grid-template-areas:
+    "a a a a   a a a a   a a a a"
+    "b b b b   b b b b   b b b b "
+    "d d d d   d d d d   d d d d"
+    "d d d d   d d d d   d d d d"
+    "d d d d   d d d d   d d d d"
+    "c c c c   c c c c   c c c c"
+    "e e e e   e e e e   e e e e"
+    "f f f f   f f f f   f f f f";
+  @include mq(768px) {
+    font-size: 3rem;
+    grid-template-areas:
+      "a a a a   a a a a   a a a a"
+      "b b b b   b b b b   b b b b "
+      "c c d d   d d d d   d d d d"
+      "c c d d   d d d d   d d d d"
+      "c c d d   d d d d   d d d d"
+      "e e f f   f f f f   f f f f";
+  }
+  @include mq(1025px) {
+    grid-template-areas:
+      "a a a a   a a a a   a a a a"
+      "c c b b   b b b b   b b e e"
+      "c c d d   d d d d   d d e e"
+      "c c d d   d d d d   d d e e"
+      "c c d d   d d d d   d d e e"
+      "f f f f   f f f f   f f f f";
+  }
+}
